@@ -1,0 +1,152 @@
+/* font-family: 'Pacifico', cursive;
+font-family: 'Quicksand', sans-serif;   */
+
+html {
+    scroll-behavior: smooth;
+    /* Set for easy REM calculations - browser default: 16px = 1rem = 100%
+    I want 10px to equal 1rem = (100/16)*10 = 62.5%
+    So I set my root/html size to 62.5%, which is now what every font is relative to.
+    So, 1 rem for any element will be 10 px. */ 
+    font-size: 62.5%;
+} 
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    /* 1.8rem * 10px = 18px, relevant to doc font size*/
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+/****Base styles****/
+
+h1, h2 {
+    font-family: 'Pacifico', cursive;
+    color:azure;
+    text-align: center;
+}
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-size: 5.5rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+a {
+    color: azure;
+    text-decoration: none;
+}
+
+a:visited {
+    color:azure;
+}
+
+
+/****NAVBAR****/
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: chocolate;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* x y blur color */
+    box-shadow: 1px 1px 10px black;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 2rem;
+}
+
+.nav-list a {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: 600;
+    padding: 1rem;
+}
+
+.nav-list a:hover {
+    background-color:darkgrey;
+    color:black;
+}
+
+/****WELCOME****/
+
+#welcome-section {
+    background-color: darkcyan;
+    display: flex;
+    /* how items are placed in the container - w/ col main axis is y */
+    flex-direction: column;
+    /* alignment on main-axis (y) */    
+    justify-content: center;
+    /* alignment on cross-axis (x) */
+    align-items: center;
+    width: 100%;
+    /* vh = viewport height */
+    height: 100vh;
+}
+
+#welcome-section p {
+    font-size: 2.5rem;
+    font-style: italic;
+    color:darkorange;
+    font-weight: 700;
+}
+
+/****PROJECTS****/
+
+#projects {
+    background-color:darkslategray;
+    text-align: center;
+    padding: 6rem 2rem;
+}
+
+.projects-header {
+    margin-bottom: 5rem;
+    border-bottom: solid 1px azure;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat;
+}
+
+.project {
+
+}
+
+.project-image {
+
+}
+
+.caption {
+    
+}
+
+
+
+/****CONTACT****/
+
+#contact {
+    background-color: goldenrod;
+    text-align: center;
+    padding: 6rem 2rem;
+}
+
+.contact-header {
+    margin-bottom: 5rem;
+    border-bottom: solid 1px azure;
+}
+
+
+/****FOOTER****/
+
+footer {
+    background-color:cornflowerblue;
+}

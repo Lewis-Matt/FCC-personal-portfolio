@@ -9,6 +9,32 @@ html {
     So, 1 rem for any element will be 10 px. */ 
     font-size: 62.5%;
 } 
+/****MEDIA QUERIES****/
+
+/* Screen-size divided by base font size = ..em */
+/* min-width is a mobile first design approach - base styles cater to avg mobile (760px), and
+then media queries are for larger screens, or smaller phones (<460px) */
+
+/* viewport 4 (phones): 460px/16px = 28.75em */
+@media (min-width: 28.75em) {
+    html {
+        font-size: 55%;
+    }
+};
+
+/* viewport 7 (tablets): 980px/16px = 61.25em */
+@media (min-width: 61.25em) {
+    html {
+        font-size: 58%;
+    }
+};
+
+/* viewport 12 (laptops): 1200px/16px = 75em */
+@media (min-width: 75em) {
+    html {
+        font-size: 60%;
+    }
+};
 
 body {
     font-family: 'Quicksand', sans-serif;
@@ -16,6 +42,7 @@ body {
     font-size: 1.8rem;
     line-height: 1.5;
 }
+
 /****Base styles****/
 
 h1, h2 {
@@ -43,7 +70,6 @@ a {
 a:visited {
     color:azure;
 }
-
 
 /****NAVBAR****/
 
@@ -122,7 +148,7 @@ a:visited {
     margin-bottom: 5rem;
 }
 
-.project {
+.project-tile {
     background-color:darkorange;
     box-shadow: 1px 1px 10px black;
     border-radius: 3px;
